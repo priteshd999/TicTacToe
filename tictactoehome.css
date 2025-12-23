@@ -1,30 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe - Home</title>
-    <link rel="stylesheet" href="tictactoehome.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <main>
-        <h1 class="title">Welcome to Tic Tac Toe</h1>
-        <div class="mode-selection">
-            <button id="player-vs-player" class="mode-btn">Player vs Player</button>
-            <button id="player-vs-computer" class="mode-btn">Player vs Computer</button>
-        </div>
-    </main>README.md
 
-    <script>
-        document.getElementById("player-vs-player").addEventListener("click", function() {
-            window.location.href = "tictactoe.html"; // Page for Player vs Player mode
-        });
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        document.getElementById("player-vs-computer").addEventListener("click", function() {
-            window.location.href = "tictactoeai.html"; // Page for Player vs Computer mode
-        });
-       
-    </script>
-</body>
-</html>
+main {
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 40px;
+}
+
+.mode-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mode-btn {
+    background-color: #ff7675;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-btn:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.1);
+}
+    
